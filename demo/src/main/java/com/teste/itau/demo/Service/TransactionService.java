@@ -11,7 +11,7 @@ import com.teste.itau.demo.Model.Transacao;
 
 @Service
 public class TransactionService {
-
+    // Armazenamento em memoria
     private final Queue<Transacao> localStorage = new ConcurrentLinkedQueue<>();
 
     public void add(Transacao newTransacao) {
